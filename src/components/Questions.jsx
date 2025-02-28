@@ -8,12 +8,12 @@ const Questions = (props) => {
   return (
     <div className='questions-container'>
         <div onClick={() => setIsShowing(!isShowing)} className='questions-head'>
-            <h2>{props.questions}</h2>
-            <button>
+            <h2>{props.question}</h2>
+            <button aria-label='toggle-answer'>
                 {isShowing ? <img src={minus} alt='minus image' /> : <img src={plus} alt='plus image' />} 
             </button>
         </div>
-            {isShowing && <p>{props.answers}</p>}
+            {isShowing && <p>{props.answer}</p>}
     </div>
   )
 }

@@ -5,16 +5,6 @@ import star from '../assets/images/icon-star.svg'
 
 const Container = () => {
 
-    // function createQuestion(question, index){
-    //     return (
-    //         <Questions 
-    //             key={index}
-    //             questions={question.questions}
-    //             answers={question.answers}
-    //         />
-    //     )
-    // }
-
   return (  
     <div className='faq-container'>
         <div className='container-head'>
@@ -25,9 +15,8 @@ const Container = () => {
                 {
                     return (
                         <Questions 
-                            
-                            questions={question.questions}
-                            answers={question.answers}
+                            question={question.question}
+                            answer={question.answer}
                         />
                     )
                 }
